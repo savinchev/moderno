@@ -28,7 +28,7 @@ gulp.task('style', function(){
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/magnific-popup/dist/magnific-popup.css',
-        'node_modules/rateyo/src/jquery.rateyo.css'
+        'node_modules/rateyo/src/jquery.rateyo.css'              //не подключается, добавлен код в style.scss
     ])
         .pipe(concat('libs.css'))
         .pipe(gulp.dest('app/css'))

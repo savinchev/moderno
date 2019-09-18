@@ -280,7 +280,7 @@
             color: $green;
         }
         .advantages__item-images{
-            q{
+            path{
                 fill: #fff;
             }
         }
@@ -294,14 +294,14 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto 30px;
-        transition: all 3s;
+        // transition: all 3s;
     }
     &-title{
         margin-bottom: 25px;
         font-size: 24px;
         color: #fff;
         @include f500;
-        transition: all 3s;
+        // transition: all 3s;
     }
     &-text{
         font-size: 15px;
@@ -325,7 +325,7 @@
     // end advantages
 
 
-        //  CSS для RateYo
+    //  CSS для RateYo
     .jq-ry-container {
         position: relative;
         padding: 0 5px;
