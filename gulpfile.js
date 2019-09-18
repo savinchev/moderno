@@ -19,6 +19,9 @@ gulp.task('sass', function(){
 });
 
     //  используется пока нет плагина gulp-cssmin
+    // .pipe(concat('libs.css'))
+    // .pipe(cssmin())    если используется плагин cssmin
+    // .pipe(gulp.dest('app/css'))
 
 gulp.task('style', function(){
     return gulp.src([
@@ -28,7 +31,6 @@ gulp.task('style', function(){
         'node_modules/rateyo/src/jquery.rateyo.css'
     ])
         .pipe(concat('libs.css'))
-        // .pipe(cssmin())    если используется плагин cssmin
         .pipe(gulp.dest('app/css'))
 });
 
