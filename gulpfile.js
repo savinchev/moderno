@@ -28,7 +28,7 @@ gulp.task('style', function(){
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/magnific-popup/dist/magnific-popup.css',
-        'node_modules/rateyo/src/jquery.rateyo.css'              //не подключается, добавлен код в style.scss
+        'node_modules/rateyo/src/jquery.rateyo.css'              
     ])
         .pipe(concat('libs.css'))
         .pipe(gulp.dest('app/css'))
@@ -70,4 +70,4 @@ gulp.task('watch', function(){
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
-gulp.task('default', gulp.parallel('script','sass', 'watch', 'browser-sync'));
+gulp.task('default', gulp.parallel('style', 'script', 'sass', 'watch', 'browser-sync'));
