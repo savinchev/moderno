@@ -6,6 +6,7 @@
 .header{
     background-color: #fff;
 }
+
 .header__top-inner{
     display: flex;
     justify-content: space-between;
@@ -508,9 +509,27 @@
         }
     }
 }
-.products .products__item{
+.products .product__item{
     flex-basis: calc(25% - 30px);
     margin-left: 30px;
+}
+.product__item{
+    &:nth-child(1),
+    &:nth-child(5){
+        animation-delay: 0.3s;
+    }
+    &:nth-child(2),
+    &:nth-child(6){
+        animation-delay: 0.5s;
+    }
+    &:nth-child(3),
+    &:nth-child(7){
+        animation-delay: 0.7s;
+    }
+    &:nth-child(4),
+    &:nth-child(8){
+        animation-delay: 0.9s;
+    }
 }
 .product__item{
     max-width: 442px;
